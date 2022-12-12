@@ -6,7 +6,7 @@ class Day12 {
 
     var start: Pair<Int, Int>? = null
 
-    val weights: MutableList<MutableList<Int?>>k
+    val weights: MutableList<MutableList<Int?>>
 
     constructor(input: String) {
 
@@ -38,7 +38,6 @@ class Day12 {
                     }
                     'E' -> {
                         terrainRow.add(25)
-                        end = Pair(rowIndex+1, index+1)
                         weightRow.add(0)
                     }
                     else -> {
